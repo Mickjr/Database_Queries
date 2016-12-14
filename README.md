@@ -45,8 +45,8 @@ WHERE CITY = 'INDIANAPOLIS'
 ORDER BY EMP_ID;</pre>
 
 #################################################################################
-Displaying data for a given condition and sorting the output on multiple columns,
-one column sorted in reverse order:
+<h2>Displaying data for a given condition and sorting the output on multiple columns,
+one column sorted in reverse order:</h2>
 #################################################################################
 <pre>SELECT EMP_ID, LAST_NAME
 FROM EMPLOYEE_TBL
@@ -54,8 +54,8 @@ WHERE CITY = 'INDIANAPOLIS'
 ORDER BY EMP_ID, LAST_NAME DESC;</pre>
 
 #############################################################################
-Displaying data for a given condition and sorting the output using an integer
-in the place of the spelled-out column name:
+<h2>Displaying data for a given condition and sorting the output using an integer
+in the place of the spelled-out column name:</h2>
 #############################################################################
 <pre>SELECT EMP_ID, LAST_NAME
 FROM EMPLOYEE_TBL
@@ -63,9 +63,9 @@ WHERE CITY = 'INDIANAPOLIS'
 ORDER BY 1; </pre>
 
 #############################################################################
-Displaying data for a given condition and sorting the output by multiple
+<h2>Displaying data for a given condition and sorting the output by multiple
 columns using integers, the order of the columns in the sort is different than
-their corresponding order after the SELECT keyword:
+their corresponding order after the SELECT keyword:</h2>
 #############################################################################
 <pre>SELECT EMP_ID, LAST_NAME
 FROM EMPLOYEE_TBL
@@ -73,7 +73,7 @@ WHERE CITY = 'INDIANAPOLIS'
 ORDER BY 2, 1; </pre>
 
 #############################################################################
-When selecting all rows of data from a large table, the results could render
+<h2>When selecting all rows of data from a large table, the results could render
 a substantial amount of data returned.
 
 Counting the Records in a Table
@@ -84,16 +84,16 @@ count is accomplished by the function COUNT. Although functions are not
 discussed until later in this book, this function should be introduced here
 because it is often a part of one of the simplest queries that you can create.
 
-The syntax of the COUNT function is as follows:
+The syntax of the COUNT function is as follows:</h2>
 #############################################################################
 <pre>SELECT COUNT(*)
 FROM TABLE_NAME;</pre>
 
 #############################################################################
-The COUNT function is used with parentheses, which are used to enclose the
+<h2>The COUNT function is used with parentheses, which are used to enclose the
 target column to count or the asterisk to count all rows of data in the table.
 
-Counting the number of records in the PRODUCTS_TBL table:
+Counting the number of records in the PRODUCTS_TBL table:</h2>
 #############################################################################
 <pre>SELECT COUNT(*) FROM PRODUCTS_TBL;
 
@@ -105,7 +105,7 @@ COUNT(*)
 1 row selected.</pre>
 
 ####################################################################
-Counting the number of values for PROD_ID in the PRODUCTS_TBL table:
+<h2>Counting the number of values for PROD_ID in the PRODUCTS_TBL table:</h2>
 ####################################################################
 <pre>SELECT COUNT(PROD_ID) FROM PRODUCTS_TBL;
 
@@ -122,35 +122,35 @@ counting the number of records in a table, if the column being counted is NOT NU
 number of rows for a table.</pre>
 
 ###################################################################################
-Selecting Data from Another User's Table
+<h2>Selecting Data from Another User's Table
 
 Permission must be granted to a user to access another user's table. If no permission
 has been granted, access is not allowed. You can select data from another user's table
 after access has been granted (the GRANT command is discussed in Hour 20, "Creating and
 Using Views and Synonyms") to select from another user's table. To access another user's
 table in a SELECT statement, you must precede the table name with the schema name or
-the username that owns (created) the table, as in the following example:
+the username that owns (created) the table, as in the following example:</h2>
 ####################################################################################
 <pre>SELECT EMP_ID
 FROM SCHEMA.EMPLOYEE_TBL;</pre>
 
 #############################################################################
-NOTE
+NOTE:
 
-If a synonym exists in the database for the table to which you desire access,
+<h2>If a synonym exists in the database for the table to which you desire access,
 you do not have to specify the schema name for the table. Synonyms are alternate
 names for tables, which are discussed in Hour 21, "Working with the System Catalog."
 Column Aliases
 
 Column aliases are used to rename a table's columns for the purpose of a particular
-query. The PRODUCTS_TBL illustrates the use of column aliases.
+query. The PRODUCTS_TBL illustrates the use of column aliases.</h2>
 #############################################################################
 <pre>SELECT COLUMN_NAME ALIAS_NAME
 FROM TABLE_NAME;</pre>
 
 #####################################################################################################
-The following example displays the product description twice, giving the second column an alias named
-PRODUCT. Notice the column headers in the output.
+<h2>The following example displays the product description twice, giving the second column an alias named
+PRODUCT. Notice the column headers in the output.</h2>
 #####################################################################################################
 
 <pre>select prod_desc,
