@@ -148,29 +148,19 @@ query. The PRODUCTS_TBL illustrates the use of column aliases.
 <pre>SELECT COLUMN_NAME ALIAS_NAME
 FROM TABLE_NAME;</pre>
 
+#####################################################################################################
 The following example displays the product description twice, giving the second column an alias named
 PRODUCT. Notice the column headers in the output.
+#####################################################################################################
 
-select prod_desc,
+<pre>select prod_desc,
     prod_desc product
 from products_tbl;
 
-PROD_DESC                 PRODUCT
-------------------------- ------------------------
-WITCHES COSTUME           WITCHES COSTUME
-PLASTIC PUMPKIN 18 INCH   PLASTIC PUMPKIN 18 INCH
-FALSE PARAFFIN TEETH      FALSE PARAFFIN TEETH
-LIGHTED LANTERNS          LIGHTED LANTERNS
-ASSORTED COSTUMES         ASSORTED COSTUMES
-CANDY CORN                CANDY CORN
-PUMPKIN CANDY             PUMPKIN CANDY
-PLASTIC SPIDERS           PLASTIC SPIDERS
-ASSORTED MASKS            ASSORTED MASKS
-KEY CHAIN                 KEY CHAIN
-OAK BOOKSHELF             OAK BOOKSHELF
+
 
 
 11 rows selected.
 
 Column aliases can be used to customize names for column headers, and can also be used to reference a
-column with a shorter name in some SQL implementations.
+column with a shorter name in some SQL implementations.</pre>
