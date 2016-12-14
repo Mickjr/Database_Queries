@@ -73,7 +73,7 @@ WHERE CITY = 'INDIANAPOLIS'
 ORDER BY 2, 1; </pre>
 
 #############################################################################
-<h2>When selecting all rows of data from a large table, the results could render
+<h3>When selecting all rows of data from a large table, the results could render
 a substantial amount of data returned.
 
 Counting the Records in a Table
@@ -84,7 +84,7 @@ count is accomplished by the function COUNT. Although functions are not
 discussed until later in this book, this function should be introduced here
 because it is often a part of one of the simplest queries that you can create.
 
-The syntax of the COUNT function is as follows:</h2>
+The syntax of the COUNT function is as follows:</h3>
 #############################################################################
 <pre>SELECT COUNT(*)
 FROM TABLE_NAME;</pre>
@@ -122,14 +122,14 @@ counting the number of records in a table, if the column being counted is NOT NU
 number of rows for a table.</pre>
 
 ###################################################################################
-<h2>Selecting Data from Another User's Table
+<h3>Selecting Data from Another User's Table
 
 Permission must be granted to a user to access another user's table. If no permission
 has been granted, access is not allowed. You can select data from another user's table
 after access has been granted (the GRANT command is discussed in Hour 20, "Creating and
 Using Views and Synonyms") to select from another user's table. To access another user's
 table in a SELECT statement, you must precede the table name with the schema name or
-the username that owns (created) the table, as in the following example:</h2>
+the username that owns (created) the table, as in the following example:</h3>
 ####################################################################################
 <pre>SELECT EMP_ID
 FROM SCHEMA.EMPLOYEE_TBL;</pre>
@@ -137,13 +137,13 @@ FROM SCHEMA.EMPLOYEE_TBL;</pre>
 #############################################################################
 NOTE:
 
-<h2>If a synonym exists in the database for the table to which you desire access,
+<h3>If a synonym exists in the database for the table to which you desire access,
 you do not have to specify the schema name for the table. Synonyms are alternate
 names for tables, which are discussed in Hour 21, "Working with the System Catalog."
 Column Aliases
 
 Column aliases are used to rename a table's columns for the purpose of a particular
-query. The PRODUCTS_TBL illustrates the use of column aliases.</h2>
+query. The PRODUCTS_TBL illustrates the use of column aliases.</h3>
 #############################################################################
 <pre>SELECT COLUMN_NAME ALIAS_NAME
 FROM TABLE_NAME;</pre>
